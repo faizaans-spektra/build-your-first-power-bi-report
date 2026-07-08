@@ -259,7 +259,7 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
 1. Right click on the page and rename the new page:
    ```
-      Store Detail Tooltip
+   Store Detail Tooltip
    ```
 
    ![](./Images/L2E2T5SS1.png)
@@ -280,35 +280,35 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
    2. In the **Visualizations** pane, select the **Card** icon.
 
-      ![](./Images/e2ss4.png)
+      ![](./Images/e1ss4.png)
 
    3. From the **Data** pane, drag `Sales[Total Sales]` into the **Fields** well.
 
-      ![](./Images/e2ss5.png)
+      ![](./Images/e1ss5.png)
 
    4. Resize the card to about `320 × 70 px` and position it across the top of the canvas.
 
-      ![](./Images/e2ss6.png)
+      ![](./Images/e1ss6.png)
 
 
    **Category mini-bar — Top categories**
    1. Click an empty area of the canvas.
    2. In the **Visualizations** pane, select the **Clustered bar chart** icon.
 
-      ![](./Images/e2ss7.png)
+      ![](./Images/e1ss7.png)
 
    3. Drag `Products[Category]` into the **Y-axis** well.
 
-      ![](./Images/e2ss8.png)
+      ![](./Images/e1ss8.png)
 
    4. Drag `Sales[Total Sales]` into the **X-axis** well.
 
-      ![](./Images/e2ss9.png)
+      ![](./Images/e1ss9.png)
 
    5. Resize the chart to fill the bottom of the canvas — roughly `320 × 170 px`.
    6. In **Format visual**, apply the compact settings so the bar chart fits the tooltip canvas cleanly. **General > Title > Text**: `Top categories`, **Font size** `10`
 
-      ![](./Images/e2ss10.png)
+      ![](./Images/e1ss10.png)
 
 ### Part B: Wire the tooltip to the Sales by Store visual
  
@@ -316,13 +316,13 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
    ![](./Images/L2E2T5S4.png)
 
-5. Navigate to **Format visual > General > Tooltips**, 
+5. Navigate to **Format visual (1) > General (2) > Tooltips (3)**, 
    
    ![](./Images/e1ss12.png)
 
 1. Set:
-   - **Type**: **Report page**
-   - **Page**: **Store Detail Tooltip**
+   - **Type**: **Report page (1)**
+   - **Page**: **Store Detail Tooltip (2)**
 
    ![](./Images/e1ss15.png)
 
@@ -332,14 +332,11 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
 ### Part C: Capture two bookmarks
  
-7. On the **View** ribbon, enable the **Bookmarks** and **Selection** panes.
+7. On the **View (1)** ribbon, enable the **Bookmarks** and **Selection** panes.
 
    ![](./Images/e1ss16.png)
 
-8. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane click **Add**, then use the **⋯** menu to **Rename** to:
-   ```
-      Analyst Detail
-   ```
+8. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane click **Add (1)**, then use the **⋯** menu to **Rename** to `Analyst Detail` (2). 
  
    ![](./Images/e1ss17.png)
  
@@ -356,7 +353,7 @@ In this task, you will make the dashboard interactive in three ways: a **report-
    
 ### Part D: Add a toggle button
  
-10. On the **Insert** ribbon, select **Buttons > Blank**. Position the button in the top-right of the page near the report title.
+10. On the **Insert (1)** ribbon, select **Buttons (2) > Blank (3)**. Position the button in the top-right of the page near the report title.
 
       ![](./Images/e1ss20.png)
 
@@ -370,8 +367,8 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
       ![](./Images/e1ss22.png)
 
-    - **Action > Type**: **Bookmark**
-    - **Action > Bookmark**: **Executive Summary**
+    - **Action > Type**: **Bookmark (1)**
+    - **Action > Bookmark**: **Executive Summary (2)**
 
       ![](./Images/e1ss23.png)
 
@@ -389,7 +386,7 @@ Contoso's executives want a plain-language summary alongside the visuals. Power 
 
    ![](./Images/L2E2T6S1.png)
 
-1. Connect to Workspace, Select PowerBi workspace.
+1. In connect to workspace, Select **PowerBi (1)** workspace. Then **Select Workspace (2)**.
       ![](./Images/e1ss25.png)
 
 1. click an empty area of the canvas. In the **Visualizations** pane, select the **narrative** icon. Power BI reads the visuals on the page and auto-generates a paragraph of contextual insights.
