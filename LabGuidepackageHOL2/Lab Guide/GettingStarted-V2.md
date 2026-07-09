@@ -10,8 +10,6 @@ You will first publish the report and its semantic model to a workspace, pin its
 
 By the end of this lab, you will have transformed a working report into a board-ready, interactive analytics experience that is published, shared, refreshed, and enhanced according to modern Power BI practice.
 
-> **Note**: A pre-built copy of the Store Performance report (`StorePerformanceReport.pbix`) is provided on the lab VM at `C:\LabFiles\`, so you can complete this lab whether or not you finished HOL 1.
-
 ## 📋 Objectives
 
 After completing this lab, you will be able to:
@@ -30,10 +28,8 @@ After completing this lab, you will be able to:
 Before starting this lab, you should have:
 
 - **Store Performance report** (`StorePerformanceReport.pbix`) - provided for you at `C:\LabFiles\` on the lab virtual machine. No prior lab or setup is required.
-- **Basic familiarity with Power BI Desktop** - report pages, visuals, and the Visualizations pane.
-- **Basic understanding of the Power BI Service** - workspaces, reports, dashboards, and semantic models (datasets).
-
-> **Note**: Some features used in this lab - sharing, app publishing, scheduled refresh, AppSource visuals, and Copilot - depend on tenant settings, licensing, and administrator permissions. Where a feature is not available in the lab environment, the guide instructs you to review the option and document the dependency instead.
+- **Basic familiarity with Power BI Desktop:** Report pages, Visuals, and the Visualizations pane.
+- **Basic understanding of the Power BI Service:** Workspaces, Reports, Dashboards, and Semantic models (datasets).
 
 ## 🏗️ Architecture
 
@@ -47,14 +43,13 @@ The workflow in this lab follows the standard Power BI publish-and-share lifecyc
 
 The architecture for this lab involves the following key components:
 
-- **Power BI Desktop**: The free authoring tool where reports are designed, enhanced, and published from. In this lab, it is used to open the existing report, apply design polish, add custom visuals and interactivity, and publish to the Service.
-- **Power BI Service**: The cloud-based (SaaS) platform where published content lives. It hosts workspaces, reports, dashboards, semantic models, and apps, and provides sharing, refresh, and Copilot capabilities.
-- **Workspace**: A collaborative container in the Power BI Service that stores related reports, dashboards, and semantic models, with role-based access control (Admin, Member, Contributor, Viewer).
-- **Semantic Model (Dataset)**: The published data model behind the report. It holds the tables, relationships, and measures, and is the object on which scheduled refresh is configured.
-- **Dashboard**: A single-page canvas in the Power BI Service composed of tiles pinned from one or more reports, designed for at-a-glance monitoring.
-- **Power BI App**: A packaged, read-only distribution mechanism that bundles reports and dashboards for a broad audience with controlled navigation and permissions.
-- **AppSource Custom Visuals**: Third-party and Microsoft-built visuals that extend the native visualization library with additional chart types such as gauges, KPI indicators, and word clouds.
-- **Copilot in Power BI**: An AI assistant that can generate narrative summaries and insights from report pages, subject to licensing (Fabric capacity) and tenant settings.
+- **Power BI Desktop:** The free authoring tool where reports are designed, enhanced, and published from. In this lab, it is used to open the existing report, apply design polish, add custom visuals and interactivity, and publish to the Service.
+- **Power BI Service:** The cloud-based (SaaS) platform where published content lives. It hosts workspaces, reports, dashboards, semantic models, and apps, and provides sharing, refresh, and Copilot capabilities.
+- **Workspace:** A collaborative container in the Power BI Service that stores related reports, dashboards, and semantic models, with role-based access control (Admin, Member, Contributor, Viewer).
+- **Semantic Model (Dataset):** The published data model behind the report. It holds the tables, relationships, and measures, and is the object on which scheduled refresh is configured.
+- **Dashboard:** A single-page canvas in the Power BI Service composed of tiles pinned from one or more reports, designed for at-a-glance monitoring.
+- **AppSource Custom Visuals:** Third-party and Microsoft-built visuals that extend the native visualization library with additional chart types such as gauges, KPI indicators, and word clouds.
+- **Copilot in Power BI:** An AI assistant that can generate narrative summaries and insights from report pages, subject to licensing (Fabric capacity) and tenant settings.
 
 ## 🚀 Getting Started with the Lab
 
@@ -68,7 +63,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 ## 🧭 Exploring Your Lab Resources
 
-To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab
 
 ![](./Images/images/gs-02.png)
 
@@ -120,15 +115,13 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
    ![](./Images/gs-10.png)
 
-   > **Note**: If you see a pop-up saying that the Microsoft Fabric trial has been automatically assigned to the user, click **OK**.
+   > **Note:** If you see a pop-up saying that the Microsoft Fabric trial has been automatically assigned to the user, click **OK**.
    >
    > ![](./Images/images/note.png)
 
 1. From the Power BI home page, select **Account Manager (1)** from the top-right corner and click **Start trial (2)** to activate the Microsoft Fabric trial.
 
    ![](./Images/gs-11.png)
-
-   > **Note:** The trial is enabled to ensure that your account has access to Power BI Pro and Fabric features, including sharing and Copilot experiences used later in this lab.
 
 1. On the **Your Power BI trial is active** window, click **Got it**.
 
@@ -137,12 +130,6 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 1. Click the **Account manager (1)** icon again and, under the **Profile** section, verify that the **Trial Status (2)** shows the number of days remaining.
 
    ![](./Images/gs-14.png)
-
-1. Keep this browser session signed in - you will return to the Power BI Service after publishing your report from Power BI Desktop.
-
-## 📝 Summary
-
-In this lab, you took the Contoso Retail **Store Performance** report from a local `.pbix` file to a published, shared, refreshed, and design-polished business asset in the Power BI Service. You published to a workspace, built an executive dashboard, walked through workspace roles / direct sharing / app-based distribution, and configured scheduled refresh. You then applied a brand theme with conditional formatting, added backgrounds and card effects, brought in a certified custom visual from AppSource, wired up tooltips and bookmarks with a toggle button, and generated an AI-narrative summary with Copilot. The result is a board-ready report that stays current on its own and can be delivered to leadership through the sharing channel that fits their audience.
 
 ## 📞 Support Contact
  
