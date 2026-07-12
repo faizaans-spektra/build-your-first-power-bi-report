@@ -21,17 +21,13 @@ In this exercise, you will complete the following tasks:
 
 ## 🧩 Architecture Diagram
 
-   ![](./Images/arch-exercise-02.png)
+   ![](./Images/archex2-1207.png)
 
 ## Task 1: Apply a layout grid and a theme (brand colours)
 
 In this task, you will align the visuals on the canvas using gridlines and snap-to-grid, and apply a consistent theme. Alignment and coordinated colours are the fastest way to make a report look professionally designed rather than assembled.
 
 1. Return to **Power BI Desktop** and open the **StorePerformanceReport** if it is not already open.
-
-   ![](./Images/e2s1.png)
-
-1. Navigate to the report page that will be enhanced for executive presentation.
 
    ![](./Images/e2s1.png)
 
@@ -43,14 +39,9 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 
 1. Reposition and resize the visuals so their edges align consistently with the grid on the report canvas.
 
-1. Standardize the spacing between visuals — aim for even gaps on all sides so the page reads as an intentional layout.
-   > **Tip**: You can select multiple visuals with **Ctrl+Click** and use **Format (1) > Align (2)** to align or distribute them precisely.
+1. On the **View (1)** ribbon, expand the **Themes (2)** gallery.
 
-   ![](./Images/L2E2T1S2.png)
-
-1. On the **View** ribbon, expand the **Themes** gallery.
-
-   ![](./Images/e1s3.png)
+   ![](./Images/E2T1S4-1207.png)
 
 1. Select an appropriate built-in theme that suits an executive audience — subtle colours with good contrast, such as **Executive** or **Accessible City Park**.
 
@@ -62,7 +53,7 @@ In this task, you will align the visuals on the canvas using gridlines and snap-
 
 1. In the **Customize theme** dialog, update the following:
 
-   - **Name and colors (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
+   - **Name and colours (1)**: Adjust the first two theme colours to the brand palette (for example, `#0F6CBD` and `#212121`)
    
      ![](./Images/L2E2T1S6.png)
 
@@ -121,7 +112,7 @@ In this task, you will apply conditional formatting so important patterns and ex
      - If value is **< 2** → **Red (6)**
    - Click **OK (7)**
 
-     ![](./Images/L2E2T2S5.png)
+     ![](./Images/E2T2S4-1207.png)
 
 1. Review the updated visual and confirm the formatting highlights high, medium, and low performers as intended.
 
@@ -139,9 +130,9 @@ In this task, you will apply conditional formatting so important patterns and ex
 
      ![](./Images/L2E2T2S8.png)
 
-1. Review and Save the report.
+1. Review and save the report.
 
-   - final report looks like this after applying all conditional formating
+   - Final report looks like this after applying all conditional formatting
 
      ![](./Images/L2E2T2S9.png)
 
@@ -216,9 +207,9 @@ In this task, you will add presentation elements — a background, section shape
 
 1. Apply consistent effects across the visuals on the page, then step back and confirm the overall design remains clean, professional, and easy to read.
 
-1. Review and Save the report.
+1. Review and save the report.
 
-   - final report looks like this after applying all.
+   - Final report looks like this after applying all.
 
      ![](./Images/L2E2T3S12.png)
 
@@ -232,19 +223,21 @@ In this task, you will add presentation elements — a background, section shape
  
 Contoso needs to see at a glance which cities beat, met, or missed the sales target. A **Bullet Chart** packs actual value, target, and colour-coded performance bands into one compact row per city — better than a plain bar chart for KPI dashboards.
  
-1. In the **Visualizations** pane, click the **ellipsis (…)** and select **Get more visuals**.
+1. In the **Visualizations** pane, click the **ellipsis (…) (1)** and select **Get more visuals (2)**.
 
-   ![](./Images/e2t4s1.png)
+   ![](./Images/E2T4S1-1207.png)
 
-2. On the **AppSource** tab, search for `Bullet Chart`, select the **certified** result, and click **Add**. Click **OK** on the import confirmation.
+2. On the **AppSource visuals (1)** tab, search for `Bullet Chart` **(2)**, select the **certified (3)** result, and click **Add (4)**. 
 
    ![](./Images/e2t4s2.png)
 
-   ![](./Images/e2t4s3.png)
+   ![](./Images/E2T4S2b-1207.png)
 
-3. Click the new **Bullet Chart** icon in the **Visualizations** pane to add it to the report canvas. Position and resize it under the KPI card row.
+1. Click **OK** on the import confirmation.
 
    ![](./Images/e2t4s4.png)
+
+3. Click the new **Bullet Chart** icon in the **Visualizations** pane to add it to the report canvas. Position and resize it under the KPI card row.
 
    ![](./Images/e2t4s5.png)
 
@@ -252,16 +245,16 @@ Contoso needs to see at a glance which cities beat, met, or missed the sales tar
    - **Category**: `Stores[City]`
    - **Value**: `Sales[Total Sales]`
 
-   ![](./Images/e2t4s6.png)
+      ![](./Images/E2T4S5-1207.png)
 
-5. In **Format visual**, set the range, target, and colours so all eight Contoso cities read on a consistent scale (their Total Sales are between about $7,300 and $9,100):
+5. In **Format visual**, in Data values, set the range, target, and colours so all eight Contoso cities read on a consistent scale (their Total Sales are between about $7,300 and $9,100):
    - **Values > Target**: `8000` — Contoso's H1 city benchmark
    - **Values > Minimum**: `0`
    - **Values > Needs Improvement**: `7000` (below this = poor band)
    - **Values > Satisfactory**: `9000` (below = on-target, above = good)
    - **Values > Maximum**: `10000`
 
-   ![](./Images/e1ss29.png)
+      ![](./Images/e1ss29.png)
 
 6. Save the report. Each Contoso city now shows a compact bar-plus-target-plus-bands indicator that reads at a glance.
 
@@ -275,7 +268,7 @@ In this task, you will make the dashboard interactive in three ways: a **report-
  
    ![](./Images/L2E2T5S1.png)
 
-1. Right click on the page and rename the new page:
+1. Right-click on the page and rename the new page:
    ```
    Store Detail Tooltip
    ```
@@ -324,42 +317,44 @@ In this task, you will make the dashboard interactive in three ways: a **report-
       ![](./Images/e1ss9.png)
 
    5. Resize the chart to fill the bottom of the canvas — roughly `320 × 170 px`.
+
    6. In **Format visual**, apply the compact settings so the bar chart fits the tooltip canvas cleanly. **General > Title > Text**: `Top categories`, **Font size** `10`
 
-      ![](./Images/e1ss10.png)
+      ![](./Images/parta-s6-1207.png)
 
 ### Part B: Wire the tooltip to the Sales by Store visual
  
-4. Return to the main **Store Performance** page and select the Sales by Store bar chart.
+1. Return to the main **Store Performance** page and select the Sales by Store bar chart.
 
    ![](./Images/L2E2T5S4.png)
 
-5. Navigate to **Format visual (1) > General (2) > Tooltips (3)**, 
+2. Navigate to **Format visual (1) > General (2) > Tooltips (3)**, 
    
    ![](./Images/e1ss12.png)
 
-1. Set:
+3. Set:
    - **Type**: **Report page (1)**
    - **Page**: **Store Detail Tooltip (2)**
 
-   ![](./Images/e1ss15.png)
+      ![](./Images/e1ss15.png)
 
-6. Hover over any bar in the chart. The tooltip page appears, filtered automatically to that store — the two cards recalculate and the mini-bar shows that store's category mix.
+4. Hover over any bar in the chart. The tooltip page appears, filtered automatically to that store — the two cards recalculate, and the mini-bar shows that store's category mix.
 
    ![](./Images/e1ss14.png)
 
 ### Part C: Capture two bookmarks
  
-7. On the **View (1)** ribbon, enable the **Bookmarks** and **Selection** panes.
+1. On the **View (1)** ribbon, enable the **Bookmarks** and **Selection** panes.
 
    ![](./Images/e1ss16.png)
 
-8. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane click **Add (1)**, then use the **⋯** menu to **Rename** to `Analyst Detail` (2). 
+2. Arrange the page in its **full analyst view** — every visual visible, no slicers filtered. In the **Bookmarks** pane, click **Add (1)**, then use the **⋯** menu to **Rename** to `Analyst Detail` (2). 
  
    ![](./Images/e1ss17.png)
  
-9. Now build the executive-summary state:
-   - In the **Selection** pane, click the **eye icon** next to the store × category **table** to hide them.
+3. Now build the executive summary:
+
+   - In the **Selection** pane, click the **eye icon** next to the **Sales by Store & Category** **table** to hide them.
 
       ![](./Images/e1ss18.png)
 
@@ -371,11 +366,11 @@ In this task, you will make the dashboard interactive in three ways: a **report-
    
 ### Part D: Add a toggle button
  
-10. On the **Insert (1)** ribbon, select **Buttons (2) > Blank (3)**. Position the button in the top-right of the page near the report title.
+1. On the **Insert (1)** ribbon, select **Buttons (2) > Blank (3)**. Position the button in the top-right of the page near the report title.
 
       ![](./Images/e1ss20.png)
 
-11. In **Format button (1)**:
+2. In **Format button (1)**:
     - **Style(2) > Text (3)**: Toggle on (4)
     - Text: `Executive Summary` (5)
 
@@ -390,24 +385,25 @@ In this task, you will make the dashboard interactive in three ways: a **report-
 
       ![](./Images/e1ss23.png)
 
-12. Hold **Ctrl** and click the button. The page collapses to the executive state. Add a second button labelled `Back to Detail` wired to the `Analyst Detail` bookmark so users can return.
+3. Hold **Ctrl** and click the button. The page collapses to the executive state. Add a second button labelled `Back to Detail` wired to the `Analyst Detail` bookmark so users can return.
 
       ![](./Images/e1ss24.png)
 
-13. Save the report.
+4. Save the report.
  
 ## Task 6: Generate a narrative summary with Copilot
  
 Contoso's executives want a plain-language summary alongside the visuals. Power BI's **Narrative** visual, powered by Copilot, reads the visuals on the page and generates a written summary with footnoted references to the source visuals.
  
-1. On the report ribbon, click on Home tab and click **Copilot** to open the Copilot pane.
+1. On the report ribbon, click on the **Home (1)** tab and click **Copilot (2)** to open the Copilot pane.
 
-   ![](./Images/L2E2T6S1.png)
+   ![](./Images/E2T6S1-1207.png)
 
-1. In connect to workspace, Select **PowerBi (1)** workspace. Then **Select Workspace (2)**.
+1. In Connect to workspace, select **Power BI (1)** workspace. Then **Select Workspace (2)**.
       ![](./Images/e1ss25.png)
 
-1. click an empty area of the canvas. In the **Visualizations** pane, select the **narrative** icon. Power BI reads the visuals on the page and auto-generates a paragraph of contextual insights.
+1. Click an empty area of the canvas. In the **Visualizations** pane, select the **narrative** icon. Power BI reads the visuals on the page and auto-generates a paragraph of contextual insights.
+
    ![](./Images/e1ss26.png)
 
 2. Use one of the quick-prompt buttons — **Give an executive summary**, **Answer likely questions from leadership**, or **Create a bulleted list of insights** — or type a custom prompt in the text box, for example:
@@ -415,10 +411,14 @@ Contoso's executives want a plain-language summary alongside the visuals. Power 
    Summarize the data.
    ```
 
+3. Confirm **Reference visuals** is set to **Current page**, then click **Update**. 
+   
    ![](./Images/e1ss27.png)
 
-3. Confirm **Reference visuals** is set to **Current page**, then click **Update**. Copilot writes a narrative such as *"Overall total sales are $66,838 across 1,200 units, with Contoso Plaza identified as the top store…"*. Each sentence is footnoted with the visual it draws from.
-   
+1. Copilot writes a narrative such as *"Overall total sales are $66,838 across 1,200 units, with Contoso Plaza identified as the top store…"*. Each sentence is footnoted with the visual it draws from. 
+
+   > **Note:** The Copilot response may vary slightly each time you run it, and may not be similar as mentioned above or shared in the screenshot. The important part is that the narrative is generated and references the source visuals.
+
 4. Resize and position the narrative visual under the KPI card row. Cross-check every figure against the source visuals — KPI cards, Sales by Store bar chart, and Sales Trend line chart — and edit any wording that misrepresents the data. Save the report.
 
    ![](./Images/e1ss28.png)
@@ -433,7 +433,6 @@ In this exercise, you have accomplished the following:
 - Enhanced the page with a background, shapes, a title banner, and subtle effects
 - Imported and configured a custom visual from AppSource
 - Built a report page tooltip, bookmarks, and a bookmark-triggered button
-- Generated and validated a Copilot narrative summary, and republished the enhanced report
-### You have successfully completed the lab. Click on **Next >>**.
- 
-![](./Images/gs-next.png.png)
+- Generated and validated a Copilot narrative summary and republished the enhanced report
+
+### Congratulations! You have successfully completed the lab. 

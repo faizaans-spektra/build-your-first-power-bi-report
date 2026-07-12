@@ -37,7 +37,7 @@ The workflow in this lab follows the standard Power BI publish-and-share lifecyc
 
 ## 🧩 Architecture Diagram
 
-   ![](./Images/archlab.png)
+   ![](./Images/arch-1207.png)
 
 ## 🔍 Explanation of Components
 
@@ -53,7 +53,7 @@ The architecture for this lab involves the following key components:
 
 ## 🚀 Getting Started with the Lab
 
-Welcome to the **Publish, Share, and Enhance User Experience in Power BI** hands-on lab! We've prepared a seamless environment for you to explore and learn about publishing, sharing, and enhancing Power BI content. Let's begin by making the most of this experience.
+We've prepared a seamless environment for you to explore and learn about publishing, sharing, and enhancing Power BI content. Let's begin by making the most of this experience.
 
 ## 🖥️ Accessing Your Lab Environment
 
@@ -75,7 +75,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## ⚙️ Managing Your Virtual Machine
 
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](./Images/images/gs-04.png)
 
@@ -119,7 +119,7 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
    >
    > ![](./Images/images/note.png)
 
-1. From the Power BI home page, select **Account Manager (1)** from the top-right corner and click **Start trial (2)** to activate the Microsoft Fabric trial.
+1. From the Power BI home page, select **Account Manager (1)** from the top-right corner and click **Trial_Section_Button... (2)** to activate the Microsoft Fabric trial.
 
    ![](./Images/gs-11.png)
 

@@ -21,13 +21,13 @@ In this exercise, you will complete the following tasks:
 
 ## 🧩 Architecture Diagram
 
-   ![](./Images/arch-exercise-01.png)
+   ![](./Images/archex1-1207.png)
 
 ## Task 1: Launch the environment and open your working report
 
 In this task, you will open Power BI Desktop on the lab virtual machine and load the pre-built StorePerformanceReport provided for this lab. Verifying the report opens cleanly is an important checkpoint before publishing - any broken visuals or data errors will be carried into the Power BI Service.
 
-1. On the edge browser, click on new tab and paste below link to download the file. `https://experienceazure.blob.core.windows.net/templates/powerbi-training/Assets/StorePerformanceReport.pbix`
+1. In your LabVM, open a new browser tab in the Edge browser, click on a new tab, and paste the link below to download the file. `https://experienceazure.blob.core.windows.net/templates/powerbi-training/Assets/StorePerformanceReport.pbix`
 
    ![](./Images/images/exercise-1/e1s1.png)
 
@@ -53,9 +53,9 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
 1. Enter the temporary access pass and click on **Sign in (2)**
 
-   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject> **(1)**
+   - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)**
 
-     ![02](./Images/images/exercise-1/L2E1T1S5.png)
+     ![02](./Images/gs-09.png)
 
 1. For the pop-up **Automatically sign in to all desktop apps and websites on this device?** window, select **No, this app only**
 
@@ -79,7 +79,7 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
    ![](./Images/images/exercise-1/e1s3.png)
 
-1. Click the **Save** icon from the top-left corner to save your workbook with all the changes you've made.
+1. Click the **Save** icon from the top-left corner to save your workbook.
 
    ![](./Images/images/exercise-1/e1s4.png)
 
@@ -87,7 +87,7 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
 In this task, you will create a workspace in the Power BI Service.
 
-1. Navigate back to the Edge browser and open the Power BI tab.
+1. Navigate back to the **Edge browser** and open the **Power BI tab**.
 
 1. In the left-hand navigation pane of the Power BI interface, select **Workspaces** to view and manage your available workspaces.
    
@@ -106,8 +106,8 @@ In this task, you will create a workspace in the Power BI Service.
     - Click **Apply (3)**.
 
       ![](./Images/images/exercise-1/e1s5.png)
-
-    > 📌 **Note:** If prompted Introducing task flows, Click on **Got it** to proceed.
+      
+1. If prompted, Introducing task flows, click on **Got it** to proceed.
 
     ![](./Images/images/exercise-1/NOTE.png)
     
@@ -115,7 +115,7 @@ In this task, you will create a workspace in the Power BI Service.
 
 In this task, you will publish your report - and the semantic model behind it - from Power BI Desktop into a workspace in the Power BI Service. Publishing is the moment your report stops being a local file and becomes a shared cloud asset.
 
-1. In Power BI Desktop, verify from the top-right corner of the window that you are signed in with your organizational account:
+1. In **Power BI Desktop**, verify from the top-right corner of the window that you are signed in with your organizational account:
 
    - **Account:** <inject key="AzureAdUserEmail"></inject>
 
@@ -125,7 +125,7 @@ In this task, you will publish your report - and the semantic model behind it - 
 
    ![](./Images/images/exercise-1/e1s6.png)
 
-1. If prompted to save your changes first, click **Save**.
+1. **If prompted** to save your changes first, click **Save**.
 
    ![](./Images/images/exercise-1/L2E1T3S3.png)
 
@@ -156,11 +156,11 @@ In this task, you will publish your report - and the semantic model behind it - 
 
 In this task, you will create a consolidated executive view by pinning key report visuals to a new dashboard. Unlike a report, a dashboard is a single-page canvas that can combine tiles from multiple reports - ideal for at-a-glance monitoring by leadership.
 
-1. In the Power BI Service, from the workspace, open the **StorePerformanceReport** (Type: Report).
+1. From the Power BI Workspace, open the **StorePerformanceReport** (Type: Report).
 
    ![](./Images/images/exercise-1/e1s11.png)
 
-1. Navigate to the report page and identify a visual that represents a key business metric, such as sales trend.
+1. Navigate to the report page and identify a visual that represents a key business metric, such as a sales trend.
 
    ![](./Images/images/exercise-1/e1s12.png)
 
@@ -198,7 +198,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
 In this task, you will review the three primary ways to share content in the Power BI Service - **workspace access** (roles for collaborators), **direct item sharing** (links and invitations for specific reports or dashboards), and **apps** (a packaged, read-only experience for broad audiences) - and understand when to use each.
 
-1. In the Power BI Service, return to **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
+1. In the Power BI portal, return to **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** workspace and review its contents.
 
    ![](./Images/images/exercise-1/e1s18.png)
 
@@ -206,18 +206,18 @@ In this task, you will review the three primary ways to share content in the Pow
 
    ![](./Images/images/exercise-1/L2E1T5S2.png)
 
-1. In the **Manage access** pane, review the four available workspace roles:
-
-   - **Admin** - full control, including managing workspace access and settings
-   - **Member** - can edit, publish, and share content
-   - **Contributor** - can create and edit content, but cannot manage access
-   - **Viewer** - can only view and interact with content.
-
 1. On the **Manage Access** window, click on **+Add people or groups (1)** to add new users or service principals to your workspace.
 
     ![](./Images/images/exercise-1/L2E1T2S9.png)
 
 1. On the **+Add people or groups** window, search for the service principal using `https://aec-svc/` and select it from the search results.
+
+1. Review the four available workspace roles:
+
+   - **Admin** - full control, including managing workspace access and settings
+   - **Member** - can edit, publish, and share content
+   - **Contributor** - can create and edit content, but cannot manage access
+   - **Viewer** - can only view and interact with content.
 
 1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop-down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that it is listed on the **Manage access** window.
 
@@ -231,17 +231,17 @@ In this task, you will review the three primary ways to share content in the Pow
 
    ![](./Images/images/exercise-1/L2E1T5S6.png)
 
-1. In the **Send link** dialog, review the available direct sharing options:
+1. In the **Send link** dialog, review the available direct sharing options and click on **People in your organization with the link can view and share** option.
 
    - **Sharing with specific people** - enter a name or email to send an invitation
    - **Copy link** - generate a shareable link with configurable permissions
    - **Link settings** - control whether recipients can share further or build content on the underlying data
 
-     ![](./Images/images/exercise-1/L2E1T5S7.png)
+     ![](./Images/images/exercise-1/send-link-1207.png)
 
 1. Click the **link settings (gear/pencil) icon**, review the audience options - **People in your organization**, **People with existing access**, and **Specific people** - and the additional permissions checkboxes, then click **Apply**.
 
-   ![](./Images/images/exercise-1/L2E1T5S8.png)
+   ![](./Images/images/exercise-1/send-link2-1207.png)
 
 1. Close the sharing dialog and return to the workspace.
 
@@ -255,11 +255,16 @@ In this task, you will review the three primary ways to share content in the Pow
    - **Description (2):** `Board-ready sales insights for the Contoso executive team.`
    - Click **Next: Add content (3)**
 
-     ![](./Images/images/exercise-1/e1s19.png)
+     ![](./Images/images/exercise-1/create-app1-1207.png)
 
-1. On the **Content** tab, click **+ Add content (1)**, select the **StorePerformanceReport** and the **Executive Dashboard (2)**, click **Add (3)**, and review the navigation order, then click **Next: Add audience (4)**.
+1. On the **Content** tab, 
 
-   ![](./Images/images/exercise-1/e1s20.png)
+   - Click **+ Add content (1)**
+   - Select the **StorePerformanceReport** and the **Executive Dashboard (2)**
+   - Click **Add (3)**
+   - Review the navigation order, then click **Next: Add audience (4)**.
+
+      ![](./Images/images/exercise-1/e1s20.png)
 
 1. On the **Audience** tab, review how audiences control who sees which content, and review the audience access options.
 
@@ -279,7 +284,7 @@ In this task, you will review the three primary ways to share content in the Pow
 
 In this task, you will configure the published semantic model to refresh on a schedule so that the report and dashboard always reflect current data without any manual steps.
 
-1. Navigate back to the Power BI home page.
+1. Navigate back to the Power BI home page by clicking on the Go Back button in the bottom-left corner of the app. 
 
 1. In the Power BI workspace, locate the **StorePerformanceReport** semantic model.
 
@@ -287,7 +292,9 @@ In this task, you will configure the published semantic model to refresh on a sc
 
 1. Hover over the semantic model, click the **More options (…) (1)** menu, and select **Settings (2)**.
 
-   ![](./Images/images/exercise-1/e1s24.png)
+   ![](./Images/images/exercise-1/E1T6S3a-1207.png)
+
+   ![](./Images/images/exercise-1/E1T6S3b-1207.png)   
 
 1. On the settings page, review the available sections:
 
@@ -325,7 +332,9 @@ In this task, you will configure the published semantic model to refresh on a sc
 
 1. Click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
 
-   ![](./Images/images/exercise-1/e1s30.png)
+   ![](./Images/images/exercise-1/E1T6S3a-1207.png)
+
+   ![](./Images/images/exercise-1/E1T6S9b-1207.png)
 
 1. Verify that the refresh history shows a successful refresh status for the semantic model.
 
@@ -342,6 +351,6 @@ In this exercise, you have accomplished the following:
 - Reviewed workspace roles, direct sharing, and app publishing
 - Configured and tested scheduled refresh for the semantic model
 
-### You have successfully completed the exercise. Click on **Next >>** to continue to the next exercise.
+### You have successfully completed the exercise. Click on Next >> to continue to the next exercise.
 
 ![](./Images/gs-next.png)
